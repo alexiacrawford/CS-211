@@ -1,0 +1,14 @@
+# Lovingly crafted by the robots of CIS 211
+# 2024-03-07 19:24:13.487780 from programs/mal/read_add_print.mal
+#
+   LOAD  r12,r0,r0[510]
+   STORE  r12,var_x
+   LOAD  r12,r0,r0[510]
+   STORE  r12,var_y
+    LOAD r13,var_x
+    LOAD r12,var_y
+   ADD  r13,r13,r12
+   STORE  r13,r0,r0[511]
+	HALT  r0,r0,r0
+var_x: DATA 0
+var_y: DATA 0
