@@ -1,0 +1,34 @@
+question 1:
+   In comparison 1 the __eq__ method is called because it is called when comparing an IntConst object to an integer.
+   In comparsion 2 the __eq__ method is not called because the object is not an instance of IntConst
+
+question 2:
+    The recursion is happening in the __str__ method. self.left and self.right are instances of subclasses of Expr.
+    When we include them in the string, Python  calls their __str__ methods as part of the string formatting process.
+    This calling of __str__ on the operands leads to the recursion.
+
+question 3:
+    The recursion stops when the base case is reached. In the eval method the recursion stops when eval is called
+    on an IntConst object and returns itself.
+
+question 4:
+    It's okay to pass IntConst and Plus nodes to the Plus constructor because they are both subclasses of Expr.
+
+question 5:
+    The result becomes an InstConst object when it's wrapped in the InstConst constructor and the result is used as the
+    value of the constructor
+
+question 6:
+    They use the prefix notation
+
+question 7:
+    If "-" was used for unary and binary operations it would be confusing whether the "-" represents subtraction or
+    negation.
+
+
+
+
+
+
+
+
